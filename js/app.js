@@ -14,7 +14,8 @@ $(document).ready(function(){
 		event.preventDefault();
 
 		if(!found) {
-			userChoice = $('#user Choice = " + userChoice');
+			userChoice = $("#userGuess").val();
+			console.log("User Choice =" + userChoice);
 			clearText();
 			setFocus();
 			guessNumber = checkChoice(userChoice);
